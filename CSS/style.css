@@ -73,8 +73,31 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-    .nav{
+    .school {
         display: none;
     }
-    
+    .img1 {
+        display: flex;
+        flex-direction: row;
+    } 
+    .img2 {
+        display: flex;
+        flex-direction: row-reverse;
+    } 
+    .nav {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nav-div2 {
+        display: none;
+    }   
+    .nav-div3 button {
+        display: none;
+    }
+    .hr {
+        display: flex;
+        color: rgb(254, 163, 1);
+        background-color: rgb(254, 163, 1);
+    }
 }
