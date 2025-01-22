@@ -108,6 +108,8 @@ body {
     font-weight: 500;
 }
 
+/*BANNER*/
+
 .banner {
     display: flex;
     justify-content: space-between;
@@ -146,4 +148,101 @@ body {
         justify-items: center;
     }
 
+}
+
+/*CURRICULUM*/
+
+.imm {
+    background-image: url("/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.curriculum-div2 {
+    display: flex;
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.curriculum-div2 a {
+    text-decoration: none;
+}
+.common {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.common img {
+    justify-content: center;
+}
+
+.cur-div11 {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+ 
+.aa a{
+    color: rgb(100, 200, 255);
+}
+
+.cur-div12 {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.bb a{
+    color: rgb(240, 170, 0);
+}
+
+.cur-div13 {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.cc a{
+    color: rgb(135, 0, 255);
+}
+
+.curriculum-div3 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.curriculum-div3 button {
+    background-color:rgb(240, 170, 0);
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+}
+
+.cur-btn:hover {
+    background-color: white;
+    color: rgb(240, 170, 0);
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.5s;
+    border-radius: 20%;
+}
+
+@media only screen and (max-width: 576px) {
+    .curriculum-div2 {
+        display: flex;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 10px;
+    }
+    .curriculum-div2 > div {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .curriculum-div3 button {
+        display: none;
+    }
 }
