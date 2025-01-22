@@ -115,6 +115,9 @@ body {
     justify-content: space-between;
     margin: 0 50px;
 }
+.ban-head {
+    font-size: 30px;
+}
 
 .ban-span1 {
     color: rgb(254, 163, 1);
@@ -147,7 +150,9 @@ body {
     .banner-div1 {
         justify-items: center;
     }
-
+    .ban-head, .ban-p{
+        justify-content: center;
+    }
 }
 
 /*CURRICULUM*/
@@ -156,11 +161,12 @@ body {
     background-image: url("/images/bg.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 450px;
+    height: auto;
 }
 
 .h1 {
     text-align: center;
+    font-size: 30px;
 }
 
 .curriculum-div2 {
@@ -176,8 +182,9 @@ body {
 }
 .common {
     border-radius: 10px;
-    padding: 10px;
+    padding: 50px 10px;
     text-align: center;
+    height: auto;
 }
 
 .common img {
@@ -212,12 +219,15 @@ body {
     display: flex;
     justify-content: center;
     margin: 50px;
+    padding: 20px;
+    gap: 5px;
 }
 
 .curriculum-div3 button {
     background-color:rgb(240, 170, 0);
     border: 1px solid white;
     border-radius: 50%;
+    width: 50px;
     color: white;
 }
 
@@ -271,7 +281,6 @@ body {
     width: 50%;
     height: 50%;
     padding: 100px;
-    margin: 20px 50px;
 }
 
 .part2 {
@@ -295,6 +304,13 @@ body {
     margin-left: 50px;
 }
 
+.story-btn btn2 {
+    background: rgb(55, 149, 55);
+}
+
+.story-btn btn3 {
+    background: rgb(59, 59, 232);
+}
 .story-main-div img {
     border-radius: 5px;
 }
@@ -332,16 +348,26 @@ body {
     .part2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 15px;
+        margin: 0;
     }
     .story-main-div {
         display: grid;
+        padding: 0;
+        margin-right: 20px;
     }
     #story-btn { 
         border: none;
         margin-left: 150px;
     }
-    
+    .story-div12, .story-div13, .story-div14, .story-div15 {
+        width: 180px;
+    }
+    .story-main-div img {
+        width: 180px;
+    }
+    .story-btn {
+        width: 80px;
+    }
 }
 
 /*FOOTER*/
@@ -351,8 +377,13 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 50px;
-    padding: 50px;
+    padding-left: 100px;
     color: white;
+    height: 250px;
+}
+
+.footer-div2 {
+    margin-left: 50px;
 }
 
 .footer-div2 ul {
@@ -372,6 +403,8 @@ body {
     .footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        width: auto;
     }
 }
 
